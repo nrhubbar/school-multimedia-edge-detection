@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</head>
+<body>
+     <div class="jumbotron text-center">
+        <h1>Edge Detection</h1>
+        <p>Nicholas Hubbard</p>
+    </div>
+     <div id="template-container" class="container">
+         <script id="test" type="text/x-handlebars-template">
+             {{#each picture}}
+            <div class="col-md-6">
+                <h3>{{name}}</h3>
+                <img src="{{name}}.bmp" class="img-responsive">
+            </div>
+             {{/each}}
+        </script>
+     </div>
+</body>
+<footer>
+    <script src="index.js"></script>
+</footer>
+</html>

@@ -59,4 +59,4 @@ for key in gradientPictures.keys():
 
             gradientPictures[key][i].append(numpy.uint8(gradientValue))
 
-    Image.fromarray(numpy.asarray(gradientPictures[key])).save("{} Gradient Threshold.png".format(key))
+    Image.fromarray(numpy.asarray(gradientPictures[key])).save("{} Gradient Threshold.bmp".format(key))
